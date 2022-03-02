@@ -50,7 +50,10 @@ export default function Application(props) {
     <Appointment key={appointment.id} {...appointment} />
   ))
 
-  const setDay = day => setState({ ...state, day });
+  const setDay = day => {
+    console.log("day" + day);
+    setState({ ...state, day })
+  };
 
   const setDays = (days) => {
     setState(prev=>({...prev, days}));
