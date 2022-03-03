@@ -36,8 +36,7 @@ export default function Form(props) {
                         placeholder="Enter Student Name"
                         value={name}
                         onChange={(event) => setName(event.target.value)}
-                        data-testid="student-name-input"
-                    />
+                        data-testid="student-name-input" />
                     <section className="appointment__validation">{error}</section>
                 </form>
                 <InterviewerList interviewers={props.interviewers} interviewer={interviewer} onChange={setInterviewer} />
