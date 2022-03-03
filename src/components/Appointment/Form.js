@@ -16,7 +16,6 @@ export default function Form(props) {
         props.onCancel();
     }
 
-    //to validate that the name input cannot be empty
     function validate() {
         if (name === "") {
             setError("Student name cannot be blank");
