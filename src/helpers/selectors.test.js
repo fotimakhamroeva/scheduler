@@ -5,12 +5,14 @@ const state = {
     {
       id: 1,
       name: "Monday",
-      appointments: [1, 2, 3]
+      appointments: [1, 2, 3],
+      interviewers: [1, 2]
     },
     {
       id: 2,
       name: "Tuesday",
-      appointments: [4, 5]
+      appointments: [4, 5],
+      interviewers: [1,2]
     }
   ],
   appointments: {
@@ -88,8 +90,6 @@ test("getInterview returns an object with the interviewer data", () => {
   });
 
 
-
-//test cases for getInterviewersForDay
 test("getInterviewersForDay returns an array", () => {
     const result = getInterviewersForDay(state, "Monday");
     expect(Array.isArray(result)).toBe(true);
