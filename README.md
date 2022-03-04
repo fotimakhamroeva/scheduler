@@ -23,7 +23,6 @@ This app built and tested as a React application that allows users to book and c
 
 ## Dependencies:
 
-- [Scheduler-Api](https://github.com/lighthouse-labs/scheduler-api)
 - React
 - Webpack, 
 - Babel
@@ -37,10 +36,13 @@ This app built and tested as a React application that allows users to book and c
 
 ## Setup
 
-Install dependencies with `npm install`.
+- Install dependencies with `npm install`.
+- Fork and clone the [Scheduler-Api](https://github.com/lighthouse-labs/scheduler-api) seperately
+- Follow the README of Scheduler-Api
 
 ## Running Webpack Development Server
 
+** Make sure Scheduler-Api is running using `npm start`
 ```sh
 npm start
 ```
